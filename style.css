@@ -1,0 +1,82 @@
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --white-color: hsla(0, 0%, 100%, 0.75);
+    --light-gray: hsl(0, 0%, 95%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--light-gray);
+    font-size: 15px;
+    color: var(--white-color);
+    line-height: 1.5em;
+}
+.main{
+    width: 70vw;
+    height: auto;
+    margin: 130px auto 50px auto;
+    display: flex;
+    flex-direction: row;
+}
+.card-1, .card-2, .card-3{
+    padding: 50px 50px 0 45px;
+    display: grid;
+}
+.card-1{
+    background-color: var(--bright-orange);
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+.card-2{
+    background-color: var(--dark-cyan);
+}
+.card-3{
+    background-color: var(--very-dark-cyan);
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+}
+h1{
+    margin: 25px 0;
+    color: var(--light-gray);
+    text-transform: uppercase;
+}
+.card-1 > a, .card-2 > a, .card-3 > a{
+    margin: 90px 0 50px 0;
+    text-decoration: none;
+    background-color: var(--light-gray);
+    display: block;
+    width: 140px;
+    height: 40px;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 20px;
+    border: 1px solid var(--light-gray);
+}
+.card-1 > a{
+    color: var(--bright-orange);
+}
+.card-1 > a:hover{
+    color: var(--light-gray);
+    background-color: var(--bright-orange);
+}
+.card-2 > a{
+    color: var(--dark-cyan);
+}
+.card-2 > a:hover{
+    color: var(--light-gray);
+    background-color: var(--dark-cyan);
+}
+.card-3 > a{
+    color: var(--very-dark-cyan);
+}
+.card-3 > a:hover{
+    color: var(--light-gray);
+    background-color: var(--very-dark-cyan);
+}
+.attribution { font-size: 11px; text-align: center; color: var(--very-dark-cyan);}
+    .attribution a { color: hsl(228, 45%, 44%); }
