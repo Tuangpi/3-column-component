@@ -88,7 +88,7 @@ h1{
     .attribution a { color: hsl(228, 45%, 44%); }
 @media all and (max-width: 375px) {
     .main{
-        width: 70vw;
+        width: 90%;
         height: auto;
         margin: 100px auto 70px auto;
         display: flex;
